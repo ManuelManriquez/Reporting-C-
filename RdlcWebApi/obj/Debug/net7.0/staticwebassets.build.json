@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "FANmIcOrfH6s0HODJQjB2GktLha6pBPtp0hA7izUTNM=",
+  "Source": "RdlcWebApi",
+  "BasePath": "_content/RdlcWebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
