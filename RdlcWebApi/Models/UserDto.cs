@@ -11,8 +11,8 @@ namespace RdlcWebApi.Models
         //public Task<IEnumerable> control_number { get; set; }
         public string control_number { get; set; }
         public string full_name { get; set; }
-        public string adressee_name { get; set; }
-        public string adressee_position { get; set; }
+        public string addressee_name { get; set; }
+        public string addressee_position { get; set; }
         public string career_curriculum { get; set; }
         public int total_hours { get; set; }
         public int start_date_day { get; set; }
@@ -27,6 +27,7 @@ namespace RdlcWebApi.Models
         public string student_activity { get; set; }
         public string supervisor_position { get; set; }
         public string supervisor_name { get; set; }
+        public string project_name { get; set; }
         //public string Email { get; set; }
         //public string Phone { get; set; }
     }

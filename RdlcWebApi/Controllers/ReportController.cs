@@ -75,6 +75,7 @@ namespace RdlcWebApi.Controllers
                             result.ssl.StudentActivity,
                             result.ssl.SupervisorName,
                             result.ssl.SupervisorPosition,
+                            result.ssl.ProjectName
                         }).ToListAsync();
 
             var user = new UserDto { };
@@ -99,8 +100,8 @@ namespace RdlcWebApi.Controllers
                 {
                     control_number = result.ControlNumber,
                     full_name = result.FirstName + " " + result.MiddleName + " " + result.PaternalName + " " + result.MaternalName,
-                    adressee_name = result.AddresseeName,
-                    adressee_position = result.AddresseePosition,
+                    addressee_name = result.AddresseeName,
+                    addressee_position = result.AddresseePosition,
                     career_curriculum = result.CareerCurriculum,
                     total_hours = total_hours,
                     start_date_day = startDay,
@@ -114,7 +115,8 @@ namespace RdlcWebApi.Controllers
                     modality = result.StudentServiceModality,
                     student_activity = result.StudentActivity,
                     supervisor_name = result.SupervisorName,
-                    supervisor_position = result.SupervisorPosition
+                    supervisor_position = result.SupervisorPosition,
+                    project_name = result.ProjectName
                 };
             }
             return user;
