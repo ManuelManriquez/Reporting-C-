@@ -26,12 +26,20 @@
           <DataField>schedule_days</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="project_name">
-          <DataField>project_name</DataField>
+        <Field Name="start_hours">
+          <DataField>start_hours</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="end_hours">
+          <DataField>end_hours</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="full_name">
           <DataField>full_name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="project_name">
+          <DataField>project_name</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="career_id">
@@ -179,10 +187,10 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox2</rd:DefaultName>
-                <Top>0.5625in</Top>
+                <Top>0.6875in</Top>
                 <Left>2.93625in</Left>
                 <Height>0.25in</Height>
-                <Width>2.86458in</Width>
+                <Width>3.25125in</Width>
                 <ZIndex>1</ZIndex>
                 <Style>
                   <Border>
@@ -215,10 +223,10 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox2</rd:DefaultName>
-                <Top>0.80208in</Top>
+                <Top>0.92708in</Top>
                 <Left>3.05083in</Left>
                 <Height>0.25in</Height>
-                <Width>2.6875in</Width>
+                <Width>3.13667in</Width>
                 <ZIndex>2</ZIndex>
                 <Style>
                   <Border>
@@ -280,7 +288,7 @@
                 <Top>0.3125in</Top>
                 <Left>3.26958in</Left>
                 <Height>0.25in</Height>
-                <Width>2.65625in</Width>
+                <Width>2.91792in</Width>
                 <ZIndex>3</ZIndex>
                 <Style>
                   <Border>
@@ -342,9 +350,9 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox2</rd:DefaultName>
                 <Top>0.92708in</Top>
-                <Left>0.05603in</Left>
+                <Left>0.0677in</Left>
                 <Height>0.62239in</Height>
-                <Width>2.80036in</Width>
+                <Width>2.78869in</Width>
                 <ZIndex>4</ZIndex>
                 <Style>
                   <Border>
@@ -578,6 +586,92 @@
                           <FontWeight>Normal</FontWeight>
                         </Style>
                       </TextRun>
+                      <TextRun>
+                        <Value> de </Value>
+                        <Style>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Fields!start_hours.Value</Value>
+                        <Style>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value> a </Value>
+                        <Style>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Fields!end_hours.Value</Value>
+                        <Style>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value> horas.</Value>
+                        <Style>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value />
+                        <Style>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Sin otro particular que tratar de momento, me es grato quedar de usted.</Value>
+                        <Style>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value />
+                        <Style>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>A T E N T A M E N T E</Value>
+                        <Style>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>"Excelencia en Educación Tecnológica"</Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
                     </TextRuns>
                     <Style />
                   </Paragraph>
@@ -629,17 +723,6 @@
                       <TextRun>
                         <Value />
                         <Style>
-                          <FontWeight>Bold</FontWeight>
-                        </Style>
-                      </TextRun>
-                    </TextRuns>
-                    <Style />
-                  </Paragraph>
-                  <Paragraph>
-                    <TextRuns>
-                      <TextRun>
-                        <Value>C.c.p.- Expediente oficina de Servicio Social.</Value>
-                        <Style>
                           <FontWeight>Normal</FontWeight>
                         </Style>
                       </TextRun>
@@ -682,9 +765,9 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox7</rd:DefaultName>
                 <Top>3.92752in</Top>
-                <Left>0.25197in</Left>
+                <Left>0.0677in</Left>
                 <Height>1.33333in</Height>
-                <Width>5.59312in</Width>
+                <Width>5.65239in</Width>
                 <ZIndex>6</ZIndex>
                 <Style>
                   <Border>
@@ -701,7 +784,7 @@
             <Top>0.08159in</Top>
             <Left>0.25in</Left>
             <Height>5.26085in</Height>
-            <Width>6.3125in</Width>
+            <Width>6.1875in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
