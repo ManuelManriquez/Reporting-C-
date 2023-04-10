@@ -23,6 +23,10 @@ namespace RdlcWebApi.Models
         public int end_date_year { get; set; }
         public string head_of_department_name { get; set; }
         public string head_of_department_position { get; set; }
+        public string modality { get; set; }
+        public string student_activity { get; set; }
+        public string supervisor_position { get; set; }
+        public string supervisor_name { get; set; }
         //public string Email { get; set; }
         //public string Phone { get; set; }
     }

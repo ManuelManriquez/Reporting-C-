@@ -70,7 +70,11 @@ namespace RdlcWebApi.Controllers
                             result.suacssp.suac.c.CareerCurriculum,
                             result.ssl.TotalHours,
                             result.ssl.HeadOfDepartmentName,
-                            result.ssl.HeadOfDepartmentPosition
+                            result.ssl.HeadOfDepartmentPosition,
+                            result.ssl.StudentServiceModality,
+                            result.ssl.StudentActivity,
+                            result.ssl.SupervisorName,
+                            result.ssl.SupervisorPosition,
                         }).ToListAsync();
 
             var user = new UserDto { };
@@ -107,6 +111,10 @@ namespace RdlcWebApi.Controllers
                     end_date_year = endYear,
                     head_of_department_name = result.HeadOfDepartmentName,
                     head_of_department_position = result.HeadOfDepartmentPosition,
+                    modality = result.StudentServiceModality,
+                    student_activity = result.StudentActivity,
+                    supervisor_name = result.SupervisorName,
+                    supervisor_position = result.SupervisorPosition
                 };
             }
             return user;
