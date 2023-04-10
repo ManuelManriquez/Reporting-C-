@@ -65,16 +65,85 @@ namespace RdlcWebApi.Controllers
                             result.suacssp.suac.sua.ua.MaternalName,
                             result.ssl.StartDate,
                             result.ssl.EndDate,
+                            result.ssl.AddresseeName,
+                            result.ssl.AddresseePosition,
+                            result.suacssp.suac.c.CareerCurriculum,
+                            result.ssl.TotalHours,
+                            result.ssl.HeadOfDepartmentName,
+                            result.ssl.HeadOfDepartmentPosition
                         }).ToListAsync();
 
             var user = new UserDto { };
             foreach (var result in myData)
             {
-                user = new UserDto { control_number = result.ControlNumber, full_name = result.FirstName + " " + result.MiddleName + " " + result.PaternalName + " " + result.MaternalName };
+                int total_hours = 0;
+
+                if (result.TotalHours != null)
+                {
+                    total_hours = (int)result.TotalHours;
+                }
+
+                int startDay = result.StartDate.Value.Day;
+                var startMonth = getMonthStr(result.StartDate.Value.Month);
+
+                int startYear = result.StartDate.Value.Year;
+                int endDay = result.EndDate.Value.Day;
+                var endMonth = getMonthStr(result.EndDate.Value.Month);
+                int endYear = result.EndDate.Value.Year;
+
+                user = new UserDto
+                {
+                    control_number = result.ControlNumber,
+                    full_name = result.FirstName + " " + result.MiddleName + " " + result.PaternalName + " " + result.MaternalName,
+                    adressee_name = result.AddresseeName,
+                    adressee_position = result.AddresseePosition,
+                    career_curriculum = result.CareerCurriculum,
+                    total_hours = total_hours,
+                    start_date_day = startDay,
+                    start_date_month = startMonth,
+                    start_date_year = startYear,
+                    end_date_day = endDay,
+                    end_date_month = endMonth,
+                    end_date_year = endYear,
+                    head_of_department_name = result.HeadOfDepartmentName,
+                    head_of_department_position = result.HeadOfDepartmentPosition,
+                };
             }
             return user;
         }
 
+
+        private string getMonthStr(int monthInt)
+        {
+            switch (monthInt)
+            {
+                case 1:
+                    return "enero";
+                case 2:
+                    return "febrero";
+                case 3:
+                    return "marzo";
+                case 4:
+                    return "abril";
+                case 5:
+                    return "mayo";
+                case 6:
+                    return "junio";
+                case 7:
+                    return "julio";
+                case 8:
+                    return "agosto";
+                case 9:
+                    return "septiembre";
+                case 10:
+                    return "octubre";
+                case 11:
+                    return "noviembre";
+                case 12:
+                    return "diciembre";
+            }
+            return "";
+        }
 
         private string getReportName(string type, string subType)
         {
