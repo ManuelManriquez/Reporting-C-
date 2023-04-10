@@ -88,6 +88,12 @@ namespace RdlcWebApi.Controllers
                     total_hours = (int)result.TotalHours;
                 }
 
+                DateTime currentDate = DateTime.Now;
+
+                int current_day = currentDate.Day;
+                var current_month = getMonthStr(currentDate.Month);
+                int current_year = currentDate.Year;
+
                 int startDay = result.StartDate.Value.Day;
                 var startMonth = getMonthStr(result.StartDate.Value.Month);
 
@@ -116,7 +122,10 @@ namespace RdlcWebApi.Controllers
                     student_activity = result.StudentActivity,
                     supervisor_name = result.SupervisorName,
                     supervisor_position = result.SupervisorPosition,
-                    project_name = result.ProjectName
+                    project_name = result.ProjectName,
+                    current_day = getNumberStr(current_day),
+                    current_month = current_month,
+                    current_year = current_year
                 };
             }
             return user;
@@ -151,6 +160,76 @@ namespace RdlcWebApi.Controllers
                     return "noviembre";
                 case 12:
                     return "diciembre";
+            }
+            return "";
+        }
+
+        private string getNumberStr(int number)
+        {
+            switch (number)
+            {
+                case 1:
+                    return "un";
+                case 2:
+                    return "dos";
+                case 3:
+                    return "tres";
+                case 4:
+                    return "cuatro";
+                case 5:
+                    return "cinco";
+                case 6:
+                    return "seis";
+                case 7:
+                    return "siete";
+                case 8:
+                    return "ocho";
+                case 9:
+                    return "nueve";
+                case 10:
+                    return "diez";
+                case 11:
+                    return "once";
+                case 12:
+                    return "doce";
+                case 13:
+                    return "trece";
+                case 14:
+                    return "catorce";
+                case 15:
+                    return "quince";
+                case 16:
+                    return "dieciséis";
+                case 17:
+                    return "diecisiete";
+                case 18:
+                    return "dieciocho";
+                case 19:
+                    return "diecinueve";
+                case 20:
+                    return "veinte";
+                case 21:
+                    return "veintiuno";
+                case 22:
+                    return "veintidós";
+                case 23:
+                    return "veintitrés";
+                case 24:
+                    return "veinticuatro";
+                case 25:
+                    return "veinticinco";
+                case 26:
+                    return "veintiséis";
+                case 27:
+                    return "veintisiete";
+                case 28:
+                    return "veintiocho";
+                case 29:
+                    return "veintinueve";
+                case 30:
+                    return "treinta";
+                case 31:
+                    return "treinta y uno";
             }
             return "";
         }

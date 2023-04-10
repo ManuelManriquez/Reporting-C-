@@ -791,8 +791,111 @@
               </Border>
             </Style>
           </Rectangle>
+          <Image Name="Image7">
+            <Source>Embedded</Source>
+            <Value>Footer_ANIO</Value>
+            <Sizing>Fit</Sizing>
+            <Top>7.66096in</Top>
+            <Left>0.16752in</Left>
+            <Height>1.02084in</Height>
+            <Width>6.31214in</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Image>
+          <Image Name="Image4">
+            <Source>Embedded</Source>
+            <Value>Footer_TecJrz</Value>
+            <Sizing>FitProportional</Sizing>
+            <Top>7.53563in</Top>
+            <Left>0.68328in</Left>
+            <Height>0.375in</Height>
+            <Width>0.375in</Width>
+            <ZIndex>2</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Image>
+          <Image Name="Image5">
+            <Source>Embedded</Source>
+            <Value>Footer_LibrePlastico</Value>
+            <Sizing>FitProportional</Sizing>
+            <Top>7.53563in</Top>
+            <Left>1.11383in</Left>
+            <Height>0.375in</Height>
+            <Width>0.375in</Width>
+            <ZIndex>3</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Image>
+          <Textbox Name="Textbox1">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Av Tecnológico 1340 Fracc. El Crucero C.P. 32500 Cd. Juárez, Chih. Tel. (656) 688 2500</Value>
+                    <Style>
+                      <FontSize>8pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>e-mail: comunicacion_y_difusion@cdjuarez.tecnm.mx | tecnm.mx | cdjuarez.tecnm.mx</Value>
+                    <Style>
+                      <FontSize>8pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox1</rd:DefaultName>
+            <Top>7.91063in</Top>
+            <Left>0.57862in</Left>
+            <Height>0.38542in</Height>
+            <Width>4.61458in</Width>
+            <ZIndex>4</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Image Name="Image6">
+            <Source>Embedded</Source>
+            <Value>Footer_ISO</Value>
+            <Sizing>FitProportional</Sizing>
+            <Top>7.53563in</Top>
+            <Left>1.54439in</Left>
+            <Height>0.375in</Height>
+            <Width>0.375in</Width>
+            <ZIndex>5</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Image>
         </ReportItems>
-        <Height>5.71744in</Height>
+        <Height>8.80681in</Height>
         <Style>
           <Border>
             <Style>None</Style>
@@ -840,120 +943,10 @@
             </Border>
           </Style>
         </PageHeader>
-        <PageFooter>
-          <Height>1.13542in</Height>
-          <PrintOnFirstPage>true</PrintOnFirstPage>
-          <ReportItems>
-            <Image Name="Image7">
-              <Source>Embedded</Source>
-              <Value>Footer_ANIO</Value>
-              <Sizing>Fit</Sizing>
-              <Top>0.40278in</Top>
-              <Left>0.70905in</Left>
-              <Height>0.73264in</Height>
-              <Width>5.33136in</Width>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-              </Style>
-            </Image>
-            <Image Name="Image4">
-              <Source>Embedded</Source>
-              <Value>Footer_TecJrz</Value>
-              <Sizing>FitProportional</Sizing>
-              <Left>0.4427in</Left>
-              <Height>0.5in</Height>
-              <Width>0.5in</Width>
-              <ZIndex>1</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-              </Style>
-            </Image>
-            <Image Name="Image5">
-              <Source>Embedded</Source>
-              <Value>Footer_LibrePlastico</Value>
-              <Sizing>FitProportional</Sizing>
-              <Left>1.05603in</Left>
-              <Height>0.5in</Height>
-              <Width>0.5in</Width>
-              <ZIndex>2</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-              </Style>
-            </Image>
-            <Textbox Name="Textbox1">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>Av Tecnológico 1340 Fracc. El Crucero C.P. 32500 Cd. Juárez, Chih. Tel. (656) 688 2500</Value>
-                      <Style>
-                        <FontSize>8pt</FontSize>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>e-mail: comunicacion_y_difusion@cdjuarez.tecnm.mx | tecnm.mx | cdjuarez.tecnm.mx</Value>
-                      <Style>
-                        <FontSize>8pt</FontSize>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Textbox1</rd:DefaultName>
-              <Top>0.5in</Top>
-              <Left>0.39582in</Left>
-              <Height>0.51042in</Height>
-              <Width>4.73958in</Width>
-              <ZIndex>3</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-              </Style>
-            </Textbox>
-            <Image Name="Image6">
-              <Source>Embedded</Source>
-              <Value>Footer_ISO</Value>
-              <Sizing>FitProportional</Sizing>
-              <Left>1.64978in</Left>
-              <Height>0.5in</Height>
-              <Width>0.5in</Width>
-              <ZIndex>4</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-              </Style>
-            </Image>
-          </ReportItems>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-          </Style>
-        </PageFooter>
-        <LeftMargin>1in</LeftMargin>
-        <RightMargin>1in</RightMargin>
-        <TopMargin>1in</TopMargin>
-        <BottomMargin>1in</BottomMargin>
+        <LeftMargin>0.75in</LeftMargin>
+        <RightMargin>0.75in</RightMargin>
+        <TopMargin>0.5in</TopMargin>
+        <BottomMargin>0.5in</BottomMargin>
         <Style />
       </Page>
     </ReportSection>

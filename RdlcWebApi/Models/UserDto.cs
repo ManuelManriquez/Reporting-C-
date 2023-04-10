@@ -21,6 +21,9 @@ namespace RdlcWebApi.Models
         public int end_date_day { get; set; }
         public string end_date_month { get; set; }
         public int end_date_year { get; set; }
+        public string current_day { get; set; }
+        public string current_month { get; set; }
+        public int current_year { get; set; }
         public string head_of_department_name { get; set; }
         public string head_of_department_position { get; set; }
         public string modality { get; set; }
