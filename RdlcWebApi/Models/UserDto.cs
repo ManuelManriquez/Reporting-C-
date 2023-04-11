@@ -24,6 +24,7 @@ namespace RdlcWebApi.Models
         public string current_day { get; set; }
         public string current_month { get; set; }
         public int current_year { get; set; }
+        public int current_day_number { get; set; }
         public string head_of_department_name { get; set; }
         public string head_of_department_position { get; set; }
         public string modality { get; set; }
@@ -31,6 +32,9 @@ namespace RdlcWebApi.Models
         public string supervisor_position { get; set; }
         public string supervisor_name { get; set; }
         public string project_name { get; set; }
+        public string schedule_days { get; set; }
+        public string start_hours { get; set; }
+        public string end_hours { get; set; }
         //public string Email { get; set; }
         //public string Phone { get; set; }
     }

@@ -75,7 +75,10 @@ namespace RdlcWebApi.Controllers
                             result.ssl.StudentActivity,
                             result.ssl.SupervisorName,
                             result.ssl.SupervisorPosition,
-                            result.ssl.ProjectName
+                            result.ssl.ProjectName,
+                            result.ssl.ScheduleDays,
+                            result.ssl.ScheduleStartHours,
+                            result.ssl.ScheduleEndHours
                         }).ToListAsync();
 
             var user = new UserDto { };
@@ -101,7 +104,6 @@ namespace RdlcWebApi.Controllers
                 int endDay = result.EndDate.Value.Day;
                 var endMonth = getMonthStr(result.EndDate.Value.Month);
                 int endYear = result.EndDate.Value.Year;
-
                 user = new UserDto
                 {
                     control_number = result.ControlNumber,
@@ -125,7 +127,14 @@ namespace RdlcWebApi.Controllers
                     project_name = result.ProjectName,
                     current_day = getNumberStr(current_day),
                     current_month = current_month,
-                    current_year = current_year
+                    current_year = current_year,
+                    current_day_number = current_day,
+                    schedule_days = result.ScheduleDays,
+                    start_hours = Convert.ToString(result.ScheduleStartHours).Substring(0, 5),
+                    end_hours = Convert.ToString(result.ScheduleEndHours).Substring(0, 5)
+
+                    //start_hours = Convert.ToString(result.ScheduleStartHours.Value.Hours + ":" + result.ScheduleStartHours.Value.Minutes),
+                    //end_hours = Convert.ToString(result.ScheduleEndHours.Value.Hours + ":" + result.ScheduleEndHours.Value.Minutes)
                 };
             }
             return user;

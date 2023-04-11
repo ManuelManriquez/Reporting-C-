@@ -110,6 +110,10 @@
           <DataField>current_year</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="current_day_number">
+          <DataField>current_day_number</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>Report.Data</rd:DataSetName>
@@ -125,9 +129,9 @@
           <Image Name="Image7">
             <Source>Embedded</Source>
             <Value>Footer_ANIO</Value>
-            <Sizing>Fit</Sizing>
-            <Top>7.85384in</Top>
-            <Left>0.12535in</Left>
+            <Sizing>FitProportional</Sizing>
+            <Top>8.22884in</Top>
+            <Left>0.3177in</Left>
             <Height>1.02084in</Height>
             <Width>6.31214in</Width>
             <Style>
@@ -147,6 +151,7 @@
                       <TextRun>
                         <Value>Instituto Tecnológico de Ciudad Juárez</Value>
                         <Style>
+                          <FontFamily>Courier New</FontFamily>
                           <FontSize>9pt</FontSize>
                         </Style>
                       </TextRun>
@@ -155,9 +160,9 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox2</rd:DefaultName>
-                <Left>3.26958in</Left>
+                <Left>3.06125in</Left>
                 <Height>0.25in</Height>
-                <Width>2.46875in</Width>
+                <Width>2.86458in</Width>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -177,12 +182,15 @@
                       <TextRun>
                         <Value>DEPARTAMENTO</Value>
                         <Style>
+                          <FontFamily>Courier New</FontFamily>
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value>: Sistemas y computación</Value>
-                        <Style />
+                        <Style>
+                          <FontFamily>Courier New</FontFamily>
+                        </Style>
                       </TextRun>
                     </TextRuns>
                     <Style />
@@ -190,9 +198,9 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox2</rd:DefaultName>
                 <Top>0.6875in</Top>
-                <Left>3.06125in</Left>
+                <Left>2.82167in</Left>
                 <Height>0.25in</Height>
-                <Width>2.86458in</Width>
+                <Width>3.10416in</Width>
                 <ZIndex>1</ZIndex>
                 <Style>
                   <Border>
@@ -213,12 +221,15 @@
                       <TextRun>
                         <Value>ASUNTO</Value>
                         <Style>
+                          <FontFamily>Courier New</FontFamily>
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value>: Constancia de terminación</Value>
-                        <Style />
+                        <Style>
+                          <FontFamily>Courier New</FontFamily>
+                        </Style>
                       </TextRun>
                     </TextRuns>
                     <Style />
@@ -226,9 +237,9 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox2</rd:DefaultName>
                 <Top>0.92708in</Top>
-                <Left>3.17583in</Left>
+                <Left>3.06125in</Left>
                 <Height>0.25in</Height>
-                <Width>2.6875in</Width>
+                <Width>3.12624in</Width>
                 <ZIndex>2</ZIndex>
                 <Style>
                   <Border>
@@ -249,36 +260,42 @@
                       <TextRun>
                         <Value>Cd. Juárez Chih., </Value>
                         <Style>
+                          <FontFamily>Courier New</FontFamily>
                           <FontWeight>Normal</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
-                        <Value>=Fields!start_date_day.Value</Value>
+                        <Value>=Fields!current_day_number.Value</Value>
                         <Style>
-                          <FontWeight>Normal</FontWeight>
-                        </Style>
-                      </TextRun>
-                      <TextRun>
-                        <Value>/</Value>
-                        <Style>
-                          <FontWeight>Normal</FontWeight>
-                        </Style>
-                      </TextRun>
-                      <TextRun>
-                        <Value>=Fields!start_date_month.Value</Value>
-                        <Style>
+                          <FontFamily>Courier New</FontFamily>
                           <FontWeight>Normal</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value>/</Value>
                         <Style>
+                          <FontFamily>Courier New</FontFamily>
                           <FontWeight>Normal</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
-                        <Value>=Fields!start_date_year.Value</Value>
+                        <Value>=Fields!current_month.Value</Value>
                         <Style>
+                          <FontFamily>Courier New</FontFamily>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>/</Value>
+                        <Style>
+                          <FontFamily>Courier New</FontFamily>
+                          <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Fields!current_year.Value</Value>
+                        <Style>
+                          <FontFamily>Courier New</FontFamily>
                           <FontWeight>Normal</FontWeight>
                         </Style>
                       </TextRun>
@@ -311,6 +328,7 @@
                       <TextRun>
                         <Value>C. </Value>
                         <Style>
+                          <FontFamily>Courier New</FontFamily>
                           <FontSize>9pt</FontSize>
                           <FontWeight>Bold</FontWeight>
                         </Style>
@@ -318,6 +336,7 @@
                       <TextRun>
                         <Value>=Fields!addressee_name.Value</Value>
                         <Style>
+                          <FontFamily>Courier New</FontFamily>
                           <FontSize>9pt</FontSize>
                           <FontWeight>Bold</FontWeight>
                         </Style>
@@ -330,6 +349,7 @@
                       <TextRun>
                         <Value>=Fields!addressee_position.Value</Value>
                         <Style>
+                          <FontFamily>Courier New</FontFamily>
                           <FontSize>9pt</FontSize>
                           <FontWeight>Bold</FontWeight>
                         </Style>
@@ -342,6 +362,7 @@
                       <TextRun>
                         <Value>P R E S E N T E . -</Value>
                         <Style>
+                          <FontFamily>Courier New</FontFamily>
                           <FontSize>9pt</FontSize>
                           <FontWeight>Bold</FontWeight>
                         </Style>
@@ -375,252 +396,294 @@
                       <TextRun>
                         <Value>Por este medio hago </Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Normal</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value>CONSTAR </Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value>que el alumno </Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Normal</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value>=Fields!full_name.Value</Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value>, </Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value>con número de control </Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Normal</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value>=Fields!control_number.Value</Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value>, </Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value>inscrito en la carrera de </Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Normal</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value>=Fields!career_curriculum.Value</Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value xml:space="preserve"> </Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value>del Instituto Tecnolóligo de Cd. Juárez, </Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Normal</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value>concluyó </Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value>el servicio social, en el proyecto: </Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Normal</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value>=Fields!project_name.Value</Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value>, </Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value>(dando apoyo </Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Normal</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value>=Fields!modality.Value</Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Normal</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value> con las </Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Normal</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value>=Fields!student_activity.Value</Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Normal</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value> a el </Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Normal</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value>=Fields!supervisor_position.Value</Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Normal</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value xml:space="preserve"> </Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Normal</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value>=Fields!supervisor_name.Value</Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Normal</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value>), en el periodo comprendido del </Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Normal</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value>=Fields!start_date_day.Value</Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value> de </Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value>=Fields!start_date_month.Value</Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value> del </Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value>=Fields!start_date_year.Value</Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value> al </Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value>=Fields!end_date_day.Value</Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value> de </Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value>=Fields!end_date_month.Value</Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value> del </Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value>=Fields!end_date_year.Value</Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value xml:space="preserve"> </Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value>en su carácter de prestador de servicio social, acumulando un total de </Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Normal</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value>=Fields!total_hours.Value</Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value xml:space="preserve"> </Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value>horas</Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Normal</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value>.</Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
@@ -632,6 +695,7 @@
                       <TextRun>
                         <Value />
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
@@ -643,31 +707,48 @@
                       <TextRun>
                         <Value>Sin más por el momento, se extiende la presente, para los fines que al interesado convengan, en Ciudad Juárez, Chihuahua a los </Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Normal</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value>=Fields!current_day.Value</Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Normal</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value> días del mes de </Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Normal</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value>=Fields!current_month.Value</Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Normal</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
                         <Value> del dos mil veintitrés</Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Normal</FontWeight>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value />
+                        <Style>
+                          <FontFamily>courier New</FontFamily>
+                          <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
                     </TextRuns>
@@ -678,6 +759,7 @@
                       <TextRun>
                         <Value>A T E N T A M E N T E</Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
@@ -689,6 +771,7 @@
                       <TextRun>
                         <Value>"Excelencia en Educación Tecnológica"</Value>
                         <Style>
+                          <FontFamily>courier New</FontFamily>
                           <FontWeight>Normal</FontWeight>
                         </Style>
                       </TextRun>
@@ -721,6 +804,7 @@
                       <TextRun>
                         <Value>=Fields!head_of_department_name.Value</Value>
                         <Style>
+                          <FontFamily>Courier New</FontFamily>
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
@@ -732,6 +816,7 @@
                       <TextRun>
                         <Value>=Fields!head_of_department_position.Value</Value>
                         <Style>
+                          <FontFamily>Courier New</FontFamily>
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
@@ -743,6 +828,7 @@
                       <TextRun>
                         <Value />
                         <Style>
+                          <FontFamily>Courier New</FontFamily>
                           <FontWeight>Bold</FontWeight>
                         </Style>
                       </TextRun>
@@ -754,6 +840,7 @@
                       <TextRun>
                         <Value>C.c.p.- Expediente oficina de Servicio Social.</Value>
                         <Style>
+                          <FontFamily>Courier New</FontFamily>
                           <FontWeight>Normal</FontWeight>
                         </Style>
                       </TextRun>
@@ -765,6 +852,7 @@
                       <TextRun>
                         <Value>C.c.p.- Archivo.</Value>
                         <Style>
+                          <FontFamily>Courier New</FontFamily>
                           <FontWeight>Normal</FontWeight>
                         </Style>
                       </TextRun>
@@ -776,6 +864,7 @@
                       <TextRun>
                         <Value />
                         <Style>
+                          <FontFamily>Courier New</FontFamily>
                           <FontWeight>Normal</FontWeight>
                         </Style>
                       </TextRun>
@@ -787,6 +876,7 @@
                       <TextRun>
                         <Value>EDMP/ifm*</Value>
                         <Style>
+                          <FontFamily>Courier New</FontFamily>
                           <FontWeight>Normal</FontWeight>
                         </Style>
                       </TextRun>
@@ -827,7 +917,7 @@
             <Source>Embedded</Source>
             <Value>Footer_TecJrz</Value>
             <Sizing>FitProportional</Sizing>
-            <Top>7.72851in</Top>
+            <Top>7.97851in</Top>
             <Left>0.64111in</Left>
             <Height>0.375in</Height>
             <Width>0.375in</Width>
@@ -842,7 +932,7 @@
             <Source>Embedded</Source>
             <Value>Footer_LibrePlastico</Value>
             <Sizing>FitProportional</Sizing>
-            <Top>7.72851in</Top>
+            <Top>7.97851in</Top>
             <Left>1.07166in</Left>
             <Height>0.375in</Height>
             <Width>0.375in</Width>
@@ -860,20 +950,10 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Av Tecnológico 1340 Fracc. El Crucero C.P. 32500 Cd. Juárez, Chih. Tel. (656) 688 2500</Value>
+                    <Value>Av Tecnológico 1340 Fracc. El Crucero C.P. 32500 Cd. Juárez, Chih. Tel. (656) 688 2500 e-mail: comunicacion_y_difusion@cdjuarez.tecnm.mx | tecnm.mx | cdjuarez.tecnm.mx</Value>
                     <Style>
-                      <FontSize>8pt</FontSize>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>e-mail: comunicacion_y_difusion@cdjuarez.tecnm.mx | tecnm.mx | cdjuarez.tecnm.mx</Value>
-                    <Style>
-                      <FontSize>8pt</FontSize>
+                      <FontFamily>Courier New</FontFamily>
+                      <FontSize>7pt</FontSize>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -881,10 +961,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>8.10351in</Top>
-            <Left>0.53645in</Left>
-            <Height>0.38542in</Height>
-            <Width>4.61458in</Width>
+            <Top>8.35351in</Top>
+            <Left>0.25in</Left>
+            <Height>0.48959in</Height>
+            <Width>5.0677in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
@@ -900,7 +980,7 @@
             <Source>Embedded</Source>
             <Value>Footer_ISO</Value>
             <Sizing>FitProportional</Sizing>
-            <Top>7.72851in</Top>
+            <Top>7.97851in</Top>
             <Left>1.50222in</Left>
             <Height>0.375in</Height>
             <Width>0.375in</Width>
@@ -912,7 +992,7 @@
             </Style>
           </Image>
         </ReportItems>
-        <Height>8.87468in</Height>
+        <Height>9.24968in</Height>
         <Style>
           <Border>
             <Style>None</Style>
