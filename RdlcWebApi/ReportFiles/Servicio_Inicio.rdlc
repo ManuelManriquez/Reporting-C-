@@ -46,8 +46,8 @@
           <DataField>career_id</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="modality">
-          <DataField>modality</DataField>
+        <Field Name="student_service_modality">
+          <DataField>student_service_modality</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="student_activity">
@@ -422,14 +422,14 @@
                         </Style>
                       </TextRun>
                       <TextRun>
-                        <Value>=Fields!modality.Value</Value>
+                        <Value>=Fields!student_service_modality.Value</Value>
                         <Style>
                           <FontFamily>Courier New</FontFamily>
                           <FontWeight>Normal</FontWeight>
                         </Style>
                       </TextRun>
                       <TextRun>
-                        <Value> al </Value>
+                        <Value xml:space="preserve"> </Value>
                         <Style>
                           <FontFamily>Courier New</FontFamily>
                           <FontWeight>Normal</FontWeight>
@@ -443,7 +443,7 @@
                         </Style>
                       </TextRun>
                       <TextRun>
-                        <Value>, con el </Value>
+                        <Value>, con </Value>
                         <Style>
                           <FontFamily>Courier New</FontFamily>
                           <FontWeight>Normal</FontWeight>

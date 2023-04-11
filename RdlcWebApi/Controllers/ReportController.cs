@@ -120,7 +120,7 @@ namespace RdlcWebApi.Controllers
                     end_date_year = endYear,
                     head_of_department_name = result.HeadOfDepartmentName,
                     head_of_department_position = result.HeadOfDepartmentPosition,
-                    modality = result.StudentServiceModality,
+                    student_service_modality = result.StudentServiceModality,
                     student_activity = result.StudentActivity,
                     supervisor_name = result.SupervisorName,
                     supervisor_position = result.SupervisorPosition,

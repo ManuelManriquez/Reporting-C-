@@ -27,7 +27,7 @@ namespace RdlcWebApi.Models
         public int current_day_number { get; set; }
         public string head_of_department_name { get; set; }
         public string head_of_department_position { get; set; }
-        public string modality { get; set; }
+        public string student_service_modality { get; set; }
         public string student_activity { get; set; }
         public string supervisor_position { get; set; }
         public string supervisor_name { get; set; }
